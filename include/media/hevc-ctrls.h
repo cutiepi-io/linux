@@ -254,13 +254,4 @@ struct v4l2_ctrl_hevc_scaling_matrix {
  */
 #define V4L2_CID_HANTRO_HEVC_SLICE_HEADER_SKIP	(V4L2_CID_CODEC_HANTRO_BASE + 0)
 
-struct v4l2_ctrl_hevc_scaling_matrix {
-	__u8	scaling_list_4x4[6][16];
-	__u8	scaling_list_8x8[6][64];
-	__u8	scaling_list_16x16[6][64];
-	__u8	scaling_list_32x32[2][64];
-	__u8	scaling_list_dc_coef_16x16[6];
-	__u8	scaling_list_dc_coef_32x32[2];
-};
-
 #endif
